@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content__input">
+        <div class="container">
+          <input type="file" class="file__input" />
+          <div style="border: 1px dashed black; padding: 15px">
+            <input type="text" class="symbolToFindProb" placeholder="for example type 'a'" />
+            <p>input a symbol to find its probability in text</p>
+          </div>
+        </div>
+      </div>
+      <div class="content_data">
+        <div class="container">
+          <p class="symbol_prob__p">'symbol propbability'</p>
+          <p class="entropy__p">'alphabet entropy of text'</p>
+          <p class="information_amount__p">'text information ammount (in bits)'</p>
+          <p class="fs_to_infam__p">'file size to information amount'</p>
+        </div>
+
+        <div class="container">
+          <div class="b64">
+            <p>'base64 text code'</p>
+            <div class="base64_text__p">...</div>
+          </div>
+          <p class="base64_entropy__p">'alphabet entropy of base64 text'</p>
+          <p class="base64_information_amount__p">'base64 text information ammount (in bits)'</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
